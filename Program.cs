@@ -6,5 +6,6 @@ string? input = Console.ReadLine();
 if (input != null)
 {
     string[] values = input.Split(' ');
-    Console.WriteLine($"You entered {values.Length} values.");
+    int count = StatisticsHelper.CountValues(values);
+    Console.WriteLine($"You entered {count} values.");
 }
