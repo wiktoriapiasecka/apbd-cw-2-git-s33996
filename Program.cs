@@ -11,5 +11,10 @@ else
 {
     string[] values = input.Split(' ');
     int count = StatisticsHelper.CountValues(values);
+
+    int[] numbers = Array.ConvertAll(values, int.Parse);
+    double average = StatisticsHelper.CalculateAverage(numbers);
+
     Console.WriteLine($"You entered {count} values.");
+    Console.WriteLine($"Average: {average}");
 }
