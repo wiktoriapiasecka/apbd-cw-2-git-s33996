@@ -14,7 +14,9 @@ else
 
     int[] numbers = Array.ConvertAll(values, int.Parse);
     double average = StatisticsHelper.CalculateAverage(numbers);
+    int max = StatisticsHelper.CalculateMax(numbers);
 
     Console.WriteLine($"You entered {count} values.");
     Console.WriteLine($"Average: {average}");
+    Console.WriteLine($"Max: {max}");
 }
