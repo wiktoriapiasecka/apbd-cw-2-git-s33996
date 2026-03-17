@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Statistics calculator - MAIN");
+Console.WriteLine("Statistics calculator - MAIN + FEATURE");
 Console.WriteLine("Enter numbers separated by spaces:");
 
 string? input = Console.ReadLine();
